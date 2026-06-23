@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Welcome to DevAcademy! Connection verified.");
-});
-
 // ApexFitness Script Engine
 document.addEventListener("DOMContentLoaded", () => {
     
