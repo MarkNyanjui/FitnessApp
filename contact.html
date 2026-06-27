@@ -35,8 +35,14 @@
                 <h1 class="fw-bold">Get In <span class="text-fitness-orange">Touch</span></h1>
                 <p class="lead text-muted">Ready to start? Send us a question or visit our local club headquarters.</p>
             </div>
+
+            <div class="row g-4">
+                
                 <div class="col-lg-7" id="formWrapperContainer">
-                    <form id="contactGymForm" class="bg-white p-4 border rounded shadow-sm">
+                    <form id="contactGymForm" class="bg-white p-4 border rounded shadow-sm" novalidate>
+                        
+                        <div id="formFeedback" class="d-none alert mb-4 p-3 small"></div>
+
                         <div class="mb-3">
                             <label for="userName" class="form-label fw-bold small text-secondary">Full Name</label>
                             <input type="text" class="form-control" id="userName" placeholder="Your name">
@@ -48,7 +54,7 @@
                         <div class="mb-3">
                             <label for="classSelect" class="form-label fw-bold small text-secondary">Interested In</label>
                             <select class="form-select" id="classSelect">
-                                <option selected>Choose a fitness track...</option>
+                                <option value="">Choose a fitness track...</option>
                                 <option value="strength">Strength Training Foundations</option>
                                 <option value="yoga">Vinyasa Flow Yoga</option>
                                 <option value="spin">Apex Spin Cycling</option>
@@ -58,9 +64,10 @@
                             <label for="userMsg" class="form-label fw-bold small text-secondary">Your Message</label>
                             <textarea class="form-control" id="userMsg" rows="4" placeholder="Tell us about your fitness goals..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark w-100 py-2fw-bold">Send Inquiry</button>
+                        <button type="submit" class="btn btn-dark w-100 py-2 fw-bold">Send Inquiry</button>
                     </form>
                 </div>
+
                 <div class="col-lg-5">
                     <div class="bg-dark text-white p-4 rounded shadow-sm mb-4">
                         <h4 class="fw-bold mb-3 text-fitness-orange">Club Headquarters</h4>
@@ -77,6 +84,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
@@ -89,7 +97,7 @@
                         <p class="text-secondary small">A professional, beginner-friendly local training community focused on sustainable health and strength.</p>
                     </div>
                     <div class="col-md-4 mb-3 footer-links">
-                        <h6 class="text-uppercase fw-bold text-fitness-orange">Get Started</h6>
+                        <h6 class="text-uppercase fw-bold text-fitness-orange">Get Star
                         <ul class="list-unstyled">
                             <li><a href="index.html" class="text-light text-decoration-none small">Home</a></li>
                             <li><a href="classes.html" class="text-light text-decoration-none small">Group Classes</a></li>
@@ -114,4 +122,3 @@
             </div>
     </footer>
 </body>
-</html>
