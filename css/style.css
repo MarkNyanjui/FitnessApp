@@ -40,3 +40,15 @@ body {
 #contactGymForm {
     border-top: 4px solid #212529 !important;
 }
+
+/* Styles the homepage hero section with a full-width background image and dark overlay for better text readability */
+.hero-section {
+    min-height: 90vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../images/gym.webp") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+}
